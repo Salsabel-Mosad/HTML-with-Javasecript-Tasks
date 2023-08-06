@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head><title>substring</title></head>
+<body>
+    <!-- Description: substring text to known what is a number and what is a char -->
+    <script>
+     function str(x){
+        var InputValue=x.value;
+        var InputLength=InputValue.length;
+        for(i=0; i<InputLength; i++){
+            var y=InputValue.substring(i,i+1);
+            if(isNaN(y)){
+                alert(y +" "+"is a char");
+            }else {
+                alert(y +" "+"is  a number");
+            }
+        }
+
+    }
+    </script>
+    <form >
+        <input type="text" name="txt" >
+        <input type="submit" onclick="str(this.form.txt);">
+    </form>
+</body>
+
+</html>

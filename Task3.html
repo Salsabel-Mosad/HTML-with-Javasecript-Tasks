@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head> 
+    <title>Login Page</title>
+</head>
+<body>
+    <!-- 
+     Description: login page which if user enter username and password,will appear welcome massage w
+    -->
+    <script>
+        function welcom(){
+            if(document.login.username.value !="" && document.login.pass.value !="" )
+            {
+                 document.write("Welcome"+" "+document.login.username.value);
+            }else{
+                conf=alert("Enter your name and password");
+            }
+        }
+    </script>
+    <form name="login">
+        <i><h1>Login Page</h1></i>
+        <label><i><b>User Name</b></i></label><br>
+        <input type="text" name="username"> <br>
+        <label><i><b>Password</b></i></label><br>
+        <input type="password"  name="pass"><br>
+        <input type="submit" onclick="welcom();">
+    </form>
+
+</body>
+</html>

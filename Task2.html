@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <title> Add Message</title>
+</head>
+<body>
+    <!-- 
+     Description: when user write message and click on Add Message , This Message will be appeared below 
+                  when user not write message and click on Add Message , Alert Message will be appeared
+    -->
+    <script> 
+       
+        function message(){
+            var InputElement , ParaElement;
+            InputElement=document.getElementById("mess");
+            paraElement=document.getElementById("Message");
+            if(InputElement.value !=""){
+            paraElement.innerHTML=InputElement.value;
+            InputElement.value=" ";
+            }else{
+                alert("Enter your Message");
+            }
+            
+        }
+    </script>
+ <br> 
+ <br>
+ <input type="text" size="70" id="mess" ><br>
+ <input type="submit" size="100" Value=" Add Message " onclick="message();">
+ <p id="Message" > </p>
+
+
+</body>
+</html>
